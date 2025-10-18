@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* This is the new royal purple gradient background */
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    color: #fff; /* Sets default text color to white for better contrast */
+    text-align: center;
+    font-family: sans-serif;
+}
+
+h1 {
+    margin-top: 1.5rem; /* A little extra space at the top */
+    font-size: 3.5rem;  /* A bit larger for more impact */
+    font-weight: bold;
+    
+    /* The Gradient Magic */
+    background: linear-gradient(90deg, #89f7fe, #66a6ff, #e58cff);
+    -webkit-background-clip: text; /* For Safari/Chrome */
+    background-clip: text;
+    color: transparent;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    background-color: #ffffc7; /* Keeps the boxes light */
+    cursor: pointer;
+}
+
+#reset-btn,
+#new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #f8f9fa; /* Lighter button color */
+    color: #182848; /* Dark text on buttons */
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#msg {
+    color: #fff; /* White text for the winner/draw message */
+    font-size: 8vmin;
+}
+
+.msg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hide {
+    display: none;
+}
+
+/* Colors for X and O */
+.x {
+    color: #d90429; /* Red color for X */
+}
+
+.o {
+    color: #02c39a; /* A brighter teal/green for O for better contrast */
+}
